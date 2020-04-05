@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
 :root {
-  --mainBlue: #40acf1;
-  --transparentBlue: rgba(64, 172, 241, 0.7);
-  --mainWhite: #ffffff;
+  --mainBlue: #7a3b2e;
+  --transparentBlue: #7a3b2e;
+  --mainWhite: #101010;
   --mainBlack: #292f36;
   --mainGrey: rgb(216, 214, 214);
   --mainYellow: #e3b505;
@@ -40,6 +40,9 @@ body {
 .navbar {
   background: var(--mainWhite);
 }
+.navbar-nav {
+  color: #7a3b2e;
+}
 
 .navbar-icon {
   font-size: 2rem;
@@ -58,6 +61,7 @@ body {
 
 .nav-icons {
   /*transition delay doesnt work properly check that later*/
+  color: white;
   font-size: 1.5rem;
   color: var(--mainBlue);
   transition-property: color;
@@ -66,7 +70,7 @@ body {
 }
 
 .nav-icon:hover {
-  color: var(--mainBlack);
+  color: var(--mainBlue);
   text-decoration: none !important;
 }
 
@@ -78,7 +82,7 @@ body {
 }
 .height-max {
   min-height: calc(100vh - 76px);
-  background: url("../img/headerBcg.jpeg");
+  background: url("../img/kitchen.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
