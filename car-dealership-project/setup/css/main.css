@@ -37,6 +37,9 @@ body {
   display: none !important;
 }
 /* navbar */
+.nav-item {
+  color: white;
+}
 .navbar {
   background: var(--mainWhite);
 }
@@ -61,9 +64,8 @@ body {
 
 .nav-icons {
   /*transition delay doesnt work properly check that later*/
-  color: white;
   font-size: 1.5rem;
-  color: var(--mainBlue);
+  color: var(--mainYellow);
   transition-property: color;
   transition-delay: 2s;
   transition-timing-function: linear;
