@@ -59,7 +59,7 @@ body {
   text-transform: capitalize;
 }
 .nav-link:hover {
-  color: var(--mainBlue);
+  color: green !important;
 }
 
 .nav-icons {
