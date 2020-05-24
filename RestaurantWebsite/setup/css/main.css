@@ -257,3 +257,10 @@ body {
 .footer-icon:hover {
   color: var(--mainBlue);
 }
+.mapp {
+  height: 200px;
+  transition: 1s;
+}
+.mapp:hover {
+  height: 400px;
+}

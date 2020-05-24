@@ -171,6 +171,12 @@
     </section>
 
     <!-- end of skills section-->
+    <!--  map section-->
+    <div class="mapp col-xl" id="map" >
+
+
+    </div>
+
     <!-- inventory section-->
     <section class="inventory py-5" id="inventory">
       <div class="container">
@@ -194,7 +200,7 @@
         <button class="btn btn-outline-secondary text-uppercase mx-1 filter-btn" data-filter="kidsmenu">kids menu</button>
       </div>
     </div>
-    <!-- carss-->
+    <!-- dishes-->
     <div class="row">
       <!-- single dish-->
       <div class="col-10 mx-auto my-3 col-md-6 col-lg-3 single-car soup">
@@ -933,8 +939,31 @@
     </footer>
 
     <!-- end of footer-->
-    
+    <!-- javascirpt maps api-->
+    <script>function initMap(){
+    var options = {
 
+      zoom:12,
+      center:{ lat: 52.198583, lng: 20.931397}
+    }
+    // map
+    var map = new google.maps.Map(document.getElementById('map'),options);
+    //marker
+    var marker = new google.maps.Marker({
+      position:{ lat: 52.198583, lng: 20.931397},
+      map:map
+    });
+    
+    var infoWindow = new google.maps.InfoWindow({
+      content:'<h1> Our restaurant<h1></br><h2> Niechodzka 52<h2>'
+    });
+    marker.addListener('click',function(){
+      infoWindow.open(map,marker)
+    });
+
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA34gtfM6dThjOsYG17zbXzG7XhQsSPT-s&callback=initMap" async defer></script>
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- bootstrap js -->
